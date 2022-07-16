@@ -1,0 +1,16 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "A simple express.js example app",
+  "repository": "flyingsl0ths/express-hello-world",
+  "author": "flyingsl0ths",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "lint": "eslint \"**/**/*.{t,j}s\" --quiet --fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0"
+  }
+}
