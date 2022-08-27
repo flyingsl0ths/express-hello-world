@@ -1,6 +1,6 @@
 "use strict";
 
-const homeRoute = "http://localhost:3001/";
+const homeRoute = "https://my-hello-world-app.onrender.com";
 
 const updateHeader = async url => {
   const res = await fetch(url);
