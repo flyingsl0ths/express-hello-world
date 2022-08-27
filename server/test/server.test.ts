@@ -9,9 +9,9 @@ import { withExpressApp } from "../setup.js";
 const app = withExpressApp(express());
 
 describe("Endpoints", function () {
-  it('GET / should return a personalized "Hello World!" message', function (done) {
+  it('GET /regular should return a personalized "Hello World!" message', function (done) {
     request(app)
-      .get("/")
+      .get("/regular")
       .expect("Content-Type", "application/json; charset=utf-8")
       .expect(
         200,

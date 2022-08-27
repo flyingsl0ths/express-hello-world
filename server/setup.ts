@@ -32,7 +32,7 @@ function allowedOrigin(allowedDomain: string | undefined): string {
 }
 
 function setupRoutes(app: express.Express, origin: string) {
-  app.get("/", (_, res) => {
+  app.get("/regular", (_, res) => {
     res.setHeader("Content-Type", "application/json; charset=utf-8");
     res.setHeader("Access-Control-Allow-Origin", origin);
     res.statusCode = 200;

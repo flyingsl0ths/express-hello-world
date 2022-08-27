@@ -1,7 +1,6 @@
 "use strict";
 
-const homeRoute = "http://localhost:8080/";
-const subRoute = `${homeRoute}emoji`;
+const homeRoute = "http://localhost:3001/";
 
 const updateHeader = async url => {
   const res = await fetch(url);
@@ -11,9 +10,9 @@ const updateHeader = async url => {
 };
 
 document.querySelector(".btn").addEventListener("pointerdown", () => {
-  updateHeader(homeRoute);
+  updateHeader(homeRoute + "regular");
 });
 
 document.querySelector(".emoji").addEventListener("pointerdown", () => {
-  updateHeader(subRoute);
+  updateHeader(subRoute + "emoji");
 });
